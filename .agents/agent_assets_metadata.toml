@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "oSR5R78WbXsAduwwXFAmm"
+uri = "file://artifacts/portfolio/public/jakartagardencity.png"
+type = "image"
+title = "Jakarta Garden City Website"
+
+[[generated]]
+id = "TXp_r-FIVSsW6C2tUzKQv"
+uri = "file://artifacts/portfolio/public/simelaproklim.png"
+type = "image"
+title = "Simela Proklim Platform"
+
+[[generated]]
+id = "bQMKLaZJYbvjrKSHDqcol"
+uri = "file://artifacts/portfolio/public/inaagro.png"
+type = "image"
+title = "INA Agro Platform"
