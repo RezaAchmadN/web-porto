@@ -47,7 +47,7 @@ export function Portfolio() {
       >
         <span className="text-base font-semibold tracking-tight">Reza Achmad Naufal</span>
         <div className="flex gap-8 text-sm text-white/50">
-          {["Experience", "Projects", "Skills", "Contact"].map((item) => (
+          {["Projects", "Websites", "Experience", "Skills", "Contact"].map((item) => (
             <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-white transition-colors duration-200">
               {item}
             </a>
@@ -285,6 +285,236 @@ export function Portfolio() {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      {/* ── WEBSITES BUILT ── */}
+      <section
+        id="websites"
+        className="relative py-32 px-10 overflow-hidden"
+        style={{ background: "linear-gradient(180deg, #050508 0%, #060a18 50%, #050508 100%)" }}
+      >
+        <div
+          className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
+          style={{
+            background: "radial-gradient(circle, rgba(16,185,129,0.08) 0%, transparent 70%)",
+            filter: "blur(80px)",
+            transform: `translate(30%, -50%) translateY(${(scrollY - 1250) * 0.1}px)`,
+          }}
+        />
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="mb-16" style={fadeIn(1050, 1300)}>
+            <span className="text-xs text-emerald-400 tracking-widest uppercase font-medium">Web Development</span>
+            <h2 className="text-5xl font-bold mt-3 tracking-tight">Websites I've Built</h2>
+            <p className="text-white/35 mt-4 text-lg max-w-xl">
+              Production websites delivered for real clients — from large property developers to international climate programs.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-8">
+            {/* ── CARD 1: Jakarta Garden City ── */}
+            {(() => {
+              const progress = Math.min(Math.max((scrollY - 1150) / 280, 0), 1);
+              return (
+                <div
+                  className="group rounded-3xl overflow-hidden border border-white/7 hover:border-white/14 transition-all duration-500"
+                  style={{
+                    background: "rgba(255,255,255,0.025)",
+                    opacity: progress,
+                    transform: `translateY(${(1 - progress) * 45}px)`,
+                    transition: `opacity 0.5s ease, transform 0.5s ease, border-color 0.3s`,
+                  }}
+                >
+                  {/* Browser chrome mockup */}
+                  <div className="relative overflow-hidden" style={{ height: "260px" }}>
+                    {/* Gradient bg representing the site */}
+                    <div
+                      className="absolute inset-0"
+                      style={{
+                        background: "linear-gradient(135deg, #0f2a1a 0%, #1a4a2a 30%, #0d3320 60%, #071a10 100%)",
+                        transform: `translateY(${(scrollY - 1150) * -0.06}px)`,
+                      }}
+                    />
+                    {/* Subtle overlay pattern */}
+                    <div
+                      className="absolute inset-0 opacity-10"
+                      style={{
+                        backgroundImage: "radial-gradient(circle at 30% 40%, #4ade80 0%, transparent 50%), radial-gradient(circle at 70% 70%, #16a34a 0%, transparent 40%)",
+                      }}
+                    />
+                    {/* Mock nav bar */}
+                    <div className="absolute top-0 left-0 right-0 flex items-center justify-between px-6 py-3"
+                      style={{ background: "rgba(0,0,0,0.55)", backdropFilter: "blur(8px)" }}>
+                      <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 rounded-full bg-green-400" />
+                        <span className="text-xs text-white/60 font-mono">jakartagardencity.com</span>
+                      </div>
+                      <div className="flex gap-5 text-xs text-white/35">
+                        <span>Home</span>
+                        <span>Properties</span>
+                        <span>Facilities</span>
+                        <span>News</span>
+                      </div>
+                    </div>
+                    {/* Hero content mock */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center pt-8 px-8 text-center">
+                      <div className="text-3xl font-bold text-white/90 mb-2 tracking-tight leading-tight">
+                        Jakarta Garden City
+                      </div>
+                      <div className="text-sm text-green-400/80 mb-4 tracking-wide">
+                        The Green Urban Township
+                      </div>
+                      <div className="flex gap-3">
+                        <div className="px-3 py-1 rounded text-xs" style={{ background: "rgba(74,222,128,0.15)", color: "#4ade80", border: "1px solid rgba(74,222,128,0.25)" }}>
+                          Residential
+                        </div>
+                        <div className="px-3 py-1 rounded text-xs" style={{ background: "rgba(74,222,128,0.15)", color: "#4ade80", border: "1px solid rgba(74,222,128,0.25)" }}>
+                          Commercial
+                        </div>
+                        <div className="px-3 py-1 rounded text-xs" style={{ background: "rgba(74,222,128,0.15)", color: "#4ade80", border: "1px solid rgba(74,222,128,0.25)" }}>
+                          Virtual Tour
+                        </div>
+                      </div>
+                    </div>
+                    {/* Bottom fade */}
+                    <div className="absolute bottom-0 left-0 right-0 h-16"
+                      style={{ background: "linear-gradient(to top, rgba(10,20,15,0.9), transparent)" }} />
+                  </div>
+
+                  {/* Card content */}
+                  <div className="p-8">
+                    <div className="flex items-start justify-between mb-4">
+                      <div>
+                        <h3 className="text-xl font-bold text-white">Jakarta Garden City</h3>
+                        <p className="text-emerald-400 text-sm mt-0.5">Property Developer · Jakarta, Indonesia</p>
+                      </div>
+                      <a
+                        href="https://jakartagardencity.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border border-white/15 text-white/50 hover:border-emerald-400/40 hover:text-emerald-400 transition-all duration-200"
+                      >
+                        Visit Site
+                        <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
+                    <p className="text-white/45 text-sm leading-relaxed mb-5">
+                      Full corporate website for one of Jakarta's largest integrated green township developments.
+                      Bilingual (EN/ID), property listings, virtual 360° tours, news &amp; promo management, and contact system.
+                    </p>
+                    <div className="flex gap-2 flex-wrap">
+                      {["Next.js", "React", "Multilingual", "Virtual Tour", "CMS"].map((t) => (
+                        <span key={t} className="text-xs px-2.5 py-1 rounded-md font-mono"
+                          style={{ background: "rgba(74,222,128,0.1)", color: "#4ade80", border: "1px solid rgba(74,222,128,0.2)" }}>
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
+
+            {/* ── CARD 2: Simela Proklim ── */}
+            {(() => {
+              const progress = Math.min(Math.max((scrollY - 1230) / 280, 0), 1);
+              return (
+                <div
+                  className="group rounded-3xl overflow-hidden border border-white/7 hover:border-white/14 transition-all duration-500"
+                  style={{
+                    background: "rgba(255,255,255,0.025)",
+                    opacity: progress,
+                    transform: `translateY(${(1 - progress) * 45}px)`,
+                    transition: `opacity 0.5s ease, transform 0.5s ease, border-color 0.3s`,
+                  }}
+                >
+                  {/* Browser chrome mockup */}
+                  <div className="relative overflow-hidden" style={{ height: "260px" }}>
+                    <div
+                      className="absolute inset-0"
+                      style={{
+                        background: "linear-gradient(135deg, #0a1a2a 0%, #0f2a3a 30%, #0a2230 60%, #061218 100%)",
+                        transform: `translateY(${(scrollY - 1230) * -0.06}px)`,
+                      }}
+                    />
+                    <div
+                      className="absolute inset-0 opacity-10"
+                      style={{
+                        backgroundImage: "radial-gradient(circle at 25% 35%, #0ea5e9 0%, transparent 50%), radial-gradient(circle at 75% 65%, #06b6d4 0%, transparent 40%)",
+                      }}
+                    />
+                    {/* Mock nav bar */}
+                    <div className="absolute top-0 left-0 right-0 flex items-center justify-between px-6 py-3"
+                      style={{ background: "rgba(0,0,0,0.55)", backdropFilter: "blur(8px)" }}>
+                      <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 rounded-full bg-cyan-400" />
+                        <span className="text-xs text-white/60 font-mono">simelaproklim.org</span>
+                      </div>
+                      <div className="flex gap-5 text-xs text-white/35">
+                        <span>Overview</span>
+                        <span>Goals</span>
+                        <span>Villages</span>
+                        <span>Contact</span>
+                      </div>
+                    </div>
+                    {/* Hero content mock */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center pt-8 px-8 text-center">
+                      <div className="text-xs text-cyan-400/70 tracking-widest uppercase font-medium mb-2">PROKLIM · South Sumatra</div>
+                      <div className="text-2xl font-bold text-white/90 mb-2 tracking-tight leading-tight">
+                        Strengthening Climate-<br />Resilient Communities
+                      </div>
+                      <div className="flex gap-3 mt-2">
+                        <div className="px-3 py-1 rounded text-xs" style={{ background: "rgba(6,182,212,0.15)", color: "#67e8f9", border: "1px solid rgba(6,182,212,0.25)" }}>
+                          100 Villages
+                        </div>
+                        <div className="px-3 py-1 rounded text-xs" style={{ background: "rgba(6,182,212,0.15)", color: "#67e8f9", border: "1px solid rgba(6,182,212,0.25)" }}>
+                          10 Regencies
+                        </div>
+                      </div>
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 h-16"
+                      style={{ background: "linear-gradient(to top, rgba(6,12,22,0.9), transparent)" }} />
+                  </div>
+
+                  {/* Card content */}
+                  <div className="p-8">
+                    <div className="flex items-start justify-between mb-4">
+                      <div>
+                        <h3 className="text-xl font-bold text-white">Simela Proklim</h3>
+                        <p className="text-cyan-400 text-sm mt-0.5">UNOPS · Ministry of Environment Indonesia</p>
+                      </div>
+                      <a
+                        href="https://www.simelaproklim.org"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border border-white/15 text-white/50 hover:border-cyan-400/40 hover:text-cyan-400 transition-all duration-200"
+                      >
+                        Visit Site
+                        <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
+                    <p className="text-white/45 text-sm leading-relaxed mb-5">
+                      Official platform for a UNOPS-backed climate resilience program across 100 villages in South Sumatra.
+                      Covers program objectives, village data, gender-inclusive climate action, and stakeholder coordination.
+                    </p>
+                    <div className="flex gap-2 flex-wrap">
+                      {["Next.js", "React", "UNOPS", "PT. SUCOFINDO", "Climate Tech"].map((t) => (
+                        <span key={t} className="text-xs px-2.5 py-1 rounded-md font-mono"
+                          style={{ background: "rgba(6,182,212,0.1)", color: "#67e8f9", border: "1px solid rgba(6,182,212,0.2)" }}>
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
+          </div>
         </div>
       </section>
 
