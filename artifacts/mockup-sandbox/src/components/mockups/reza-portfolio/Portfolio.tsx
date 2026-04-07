@@ -312,6 +312,7 @@ export function Portfolio() {
             </p>
           </div>
 
+          <div className="space-y-8">
           <div className="grid grid-cols-2 gap-8">
             {/* ── CARD 1: Jakarta Garden City ── */}
             {(() => {
@@ -514,6 +515,121 @@ export function Portfolio() {
                 </div>
               );
             })()}
+          </div>
+
+          {/* ── CARD 3: INA Agro (full-width) ── */}
+          {(() => {
+            const progress = Math.min(Math.max((scrollY - 1310) / 280, 0), 1);
+            return (
+              <div
+                className="group rounded-3xl overflow-hidden border border-white/7 hover:border-white/14 transition-all duration-500"
+                style={{
+                  background: "rgba(255,255,255,0.025)",
+                  opacity: progress,
+                  transform: `translateY(${(1 - progress) * 45}px)`,
+                  transition: "opacity 0.5s ease, transform 0.5s ease, border-color 0.3s",
+                }}
+              >
+                <div className="grid grid-cols-2">
+                  {/* Left: visual mockup */}
+                  <div className="relative overflow-hidden" style={{ height: "300px" }}>
+                    <div
+                      className="absolute inset-0"
+                      style={{
+                        background: "linear-gradient(135deg, #1a1200 0%, #2d2000 30%, #1a1500 60%, #0f0d00 100%)",
+                        transform: `translateY(${(scrollY - 1310) * -0.05}px)`,
+                      }}
+                    />
+                    <div
+                      className="absolute inset-0 opacity-15"
+                      style={{
+                        backgroundImage: "radial-gradient(circle at 30% 50%, #d97706 0%, transparent 55%), radial-gradient(circle at 75% 30%, #92400e 0%, transparent 45%)",
+                      }}
+                    />
+                    {/* Mock nav bar */}
+                    <div className="absolute top-0 left-0 right-0 flex items-center justify-between px-6 py-3"
+                      style={{ background: "rgba(0,0,0,0.55)", backdropFilter: "blur(8px)" }}>
+                      <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 rounded-full bg-amber-400" />
+                        <span className="text-xs text-white/60 font-mono">ina-agro.id</span>
+                      </div>
+                      <div className="flex gap-5 text-xs text-white/35">
+                        <span>Home</span>
+                        <span>Products</span>
+                        <span>About</span>
+                        <span>Contact</span>
+                      </div>
+                    </div>
+                    {/* Hero content mock */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center pt-8 px-10 text-center">
+                      <div className="text-xs text-amber-400/70 tracking-widest uppercase font-medium mb-3">Indonesian Agriculture</div>
+                      <div className="text-3xl font-bold text-white/90 mb-3 tracking-tight leading-tight">
+                        INA Agro
+                      </div>
+                      <div className="text-sm text-white/40 mb-5 leading-relaxed">
+                        Connecting Indonesia's agricultural sector to a modern digital platform
+                      </div>
+                      <div className="flex gap-3 justify-center flex-wrap">
+                        {["Agro Platform", "Digital Marketplace", "Indonesia"].map((tag) => (
+                          <div key={tag} className="px-3 py-1 rounded text-xs"
+                            style={{ background: "rgba(217,119,6,0.15)", color: "#fbbf24", border: "1px solid rgba(217,119,6,0.25)" }}>
+                            {tag}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    {/* Decorative floating orb */}
+                    <div
+                      className="absolute bottom-6 right-8 opacity-20 pointer-events-none"
+                      style={{
+                        width: "200px", height: "200px",
+                        background: "radial-gradient(circle, #d97706, transparent 70%)",
+                        filter: "blur(40px)",
+                        transform: `translateY(${(scrollY - 1310) * -0.04}px)`,
+                      }}
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 h-16"
+                      style={{ background: "linear-gradient(to top, rgba(15,13,0,0.9), transparent)" }} />
+                  </div>
+
+                  {/* Right: details */}
+                  <div className="p-10 flex flex-col justify-center">
+                    <div className="flex items-start justify-between mb-5">
+                      <div>
+                        <h3 className="text-2xl font-bold text-white">INA Agro</h3>
+                        <p className="text-amber-400 text-sm mt-1">Agricultural Platform · Indonesia</p>
+                      </div>
+                      <a
+                        href="https://ina-agro.id"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border border-white/15 text-white/50 hover:border-amber-400/40 hover:text-amber-400 transition-all duration-200"
+                      >
+                        Visit Site
+                        <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
+                    <p className="text-white/45 text-sm leading-relaxed mb-6">
+                      A modern Indonesian agricultural web platform connecting the agro sector to digital services.
+                      Built as a full-featured Next.js application with a dynamic, bilingual interface and comprehensive
+                      agricultural product and information management.
+                    </p>
+                    <div className="flex gap-2 flex-wrap">
+                      {["Next.js", "React", "TypeScript", "Agriculture Tech", "Indonesia"].map((t) => (
+                        <span key={t} className="text-xs px-2.5 py-1 rounded-md font-mono"
+                          style={{ background: "rgba(217,119,6,0.1)", color: "#fbbf24", border: "1px solid rgba(217,119,6,0.2)" }}>
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+
           </div>
         </div>
       </section>
