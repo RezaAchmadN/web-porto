@@ -482,8 +482,8 @@ function Contact() {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <a href="mailto:reza.achmad.naufal@gmail.com" className="h-16 px-10 bg-primary hover:bg-primary/90 text-primary-foreground flex items-center justify-center rounded-full font-bold text-lg transition-all">
-              reza.achmad.naufal@gmail.com
+          <a href="mailto:reza.achmad.naufal@gmail.com" className="h-16 px-10 bg-primary hover:bg-primary/90 text-primary-foreground flex items-center justify-center rounded-full font-bold text-lg transition-all">
+            Email Me
             </a>
             <a href="https://www.linkedin.com/in/rezaachmadnaufal/" target="_blank" rel="noopener noreferrer" className="h-16 px-10 bg-white/5 hover:bg-white/10 text-white border border-white/10 flex items-center justify-center rounded-full font-bold text-lg transition-all">
               Connect on LinkedIn
