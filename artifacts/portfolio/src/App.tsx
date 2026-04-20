@@ -69,22 +69,34 @@ const PROJECTS = [
 
 const EXPERIENCE = [
   {
-    role: "L3 Backend Developer",
+    role: "L3 Developer",
     company: "PT DAnS Multi Pro",
-    period: "2023-Present",
-    desc: "Architected core backend systems. Led migration to NX monorepo cutting build times 60%. Achieved 97% downtime reduction."
+    period: "Sep 2024-Present",
+    desc: "Resolved production issues, reviewed PRs, and shipped NestJS/NX work while supporting AWS infrastructure and improving system stability."
   },
   {
-    role: "Backend Developer & Web Consultant",
-    company: "Freelance",
-    period: "2021-2023",
-    desc: "Delivered 3 production websites. Integrated payment gateways processing $2.5M+ in transactions."
+    role: "Full Stack Developer",
+    company: "PT DAnS Multi Pro",
+    period: "Mar 2022-Sep 2024",
+    desc: "Built React and Hapi.js features, improved search with Elasticsearch, and helped modernize legacy systems and data migrations."
   },
   {
-    role: "Junior Backend Developer",
-    company: "Various",
-    period: "2019-2021",
-    desc: "Built REST APIs, PostgreSQL and Redis, CI/CD pipeline setup."
+    role: "Freelance Backend Developer",
+    company: "Mamen Studio",
+    period: "Feb 2021-Aug 2024",
+    desc: "Built REST APIs for service platforms and booking systems, integrated Stripe/Braintree, and shipped real-time chat and alerts."
+  },
+  {
+    role: "Freelance Frontend Web Developer",
+    company: "DPR RI",
+    period: "Sep 2021-Feb 2022",
+    desc: "Built a .NET Core web app for activity management, document handling, and meeting scheduling."
+  },
+  {
+    role: "Software Developer Intern",
+    company: "Smartfren",
+    period: "Aug 2021-Feb 2022",
+    desc: "Supported React Native delivery for Android and iOS and improved release quality with bug fixes and process support."
   }
 ];
 
