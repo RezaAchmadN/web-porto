@@ -243,7 +243,7 @@ function Hero() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="flex flex-wrap items-center gap-4"
         >
-          <a href="mailto:reza.achmad.naufal@gmail.com" className="h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground flex items-center justify-center rounded-full font-medium transition-all group">
+          <a href="mailto:reza.achmad.naufal@gmail.com" className="h-14 px-8 bg-white/5 hover:bg-white/10 text-white border border-white/10 flex items-center justify-center rounded-full font-medium transition-all group">
             Email Me <ArrowUpRight className="ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" size={20} />
           </a>
           <a href="https://www.linkedin.com/in/rezaachmadnaufal/" target="_blank" rel="noopener noreferrer" className="h-14 px-8 bg-white/5 hover:bg-white/10 text-white border border-white/10 flex items-center justify-center rounded-full font-medium transition-all">
