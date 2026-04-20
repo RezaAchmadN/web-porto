@@ -1,0 +1,80 @@
+PT DAnS Multi Pro, Jakarta, Indonesia Mar 2022 – Present
+L3 Developer Sep 2024 – Present
+●
+Debugged and investigated production issues, providing root cause analysis and delivering eﬀective
+workarounds to ensure system stability.
+●
+Supervised and reviewed pull/merge requests from both frontend and backend developers to maintain
+code quality and consistency.
+●
+Collaborated with the tech lead and developer lead to address sprint tasks using NestJS and NX
+Monorepo, ensuring timely delivery of business requirements and alignment with project goals.
+●
+Supported the development team by setting up and maintaining AWS infrastructure, including ECS,
+Lambda, EC2, ElasticCache, RDS, S3, and Kong API Gateway, to ensure scalable and reliable
+development environments.
+●
+Addressed technical debt and implemented improvements that were previously postponed during the
+development phase to enhance user experience and system performance.
+Full Stack Developer Mar 2022 – Sep 2024
+●
+Developed UI components and APIs for web applications using React.js and Hapi.js, delivering seamless
+and responsive user experiences with optimal performance across platforms.
+●
+Broke down tasks and delegated responsibilities to team members, fostering eﬃcient collaboration
+and ensuring timely delivery of project milestones.
+●
+Initiated enhancements in the application
+'
+s search functionality by integrating Elasticsearch, improving
+both relevance and performance of search queries.
+●
+Revamped legacy applications and led data migration processes, ensuring smooth transition and
+supporting modernization and scalability.
+●
+Provided ongoing support for maintenance and version upgrades of MinIO and Elasticsearch, ensuring
+infrastructure reliability and performance improvements.
+Mamen Studio, Remote Feb 2021 – Aug 2024
+Freelance Backend Developer
+●
+Developed RESTful APIs for a C2C platform that connects users requesting services (e.g., delivery, house
+cleaning) with service providers using ExpressJs.
+●
+Integrated Braintree and Stripe as the secure payment gateway to handle transactions.
+●
+Implemented an in-app real-time chat feature to facilitate communication between users and service
+providers.
+●
+Developed backend APIs for a web-based internship management system for IPB University students,
+using Mongoose ODM with MongoDB for eﬃcient data handling.
+●
+Engineered APIs for real-time booking, parking management, and lot monitoring, leveraging PostgreSQL
+and TypeORM to ensure fast and reliable operations.
+●
+Developed and enhanced property dashboard APIs, integrating TelegramBot notifications for real-time
+log monitoring and system alerts.
+The House of Representatives, Republic of Indonesia (DPR RI), Remote Sep 2021 – Feb 2022
+Freelance Frontend Web Developer
+●
+Developed a web application using .NET Core to help BSBI Admin eﬃciently manage and organize
+activity data in collaboration with Komisi XI DPR and internal BSBI members.
+●
+Designed and implemented a UI for a document management system, enabling structured storage and
+easy access to documentation for each activity.
+●
+Initiated and integrated a meeting calendar feature, enabling better event scheduling and improving
+coordination across teams.
+PT Smartfren Telecom Tbk (Smartfren), Jakarta, Indonesia Aug 2021 – Feb 2022
+Software Developer Intern
+●
+Supported sprint development processes for both Android and iOS platforms using React Native,
+contributing to cross-platform mobile delivery and enhancing overall project eﬃciency.
+●
+Shadowed the lead developer to gain hands-on experience in eﬀective sprint planning, execution, and
+fostering team collaboration.
+●
+Learned best practices for team management and self-management under mentorship from a certified
+PMP professional, gaining valuable insights into project leadership and agile methodologies.
+●
+Proposed enhancement ideas during development to proactively address minor bugs in both
+development and production environments, utilizing CodePush and implementing eﬃcient release
